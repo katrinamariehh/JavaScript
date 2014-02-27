@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+var cat = {
+        tiredness: 20,
+        hunger: 20,
+        loneliness: 3,
+        happiness: 15,
+        obedientness: -5000,
+        feed: function(){
+            console.log("Om nom nom");
+            this.hunger -= 5;
+        },
+        sleep: function(){
+            console.log("Sleeping");
+            this.tiredness -= 5;
+        },
+        friends: function(){
+            console.log("fraaaaaanz!!!!");
+            this.loneliness -= 2;
+        },
+        isolation: function(){
+            console.log("can haz friends plz");
+            this.loneliness += 6;
+        },
+        status: function(){
+            console.log("tiredness " + this.tiredness);
+            console.log("hunger " + this.hunger);
+            console.log("loneliness " + this.loneliness);
+            console.log("hapiness " + this.happiness);
+            console.log("obedientness " + this.obedientness);
+        }
+};
+</script>
+</head>
+<body></body>
+</html>
