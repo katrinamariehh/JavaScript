@@ -6,25 +6,25 @@ var cat = {
         obedientness: -5000,
         feed: function(){
             console.log("Om nom nom");
-            this.hunger = self.hunger - 5;
+            this.hunger -= 5;
         },
         sleep: function(){
             console.log("Sleeping");
-            this.tiredness = self.tiredness -5;
+            this.tiredness -= 5;
         },
         friends: function(){
             console.log("fraaaaaanz!!!!");
-            this.loneliness = self.loneliness - 2;
+            this.loneliness -= 2;
         },
         isolation: function(){
             console.log("can haz friends plz");
-            this.loneliness = self.loneliness + 6;
+            this.loneliness += 6;
         },
         status: function(){
-            console.log("tiredness" + self.tiredness);
-            console.log("hunger" + self.hunger);
-            console.log("loneliness" + self.loneliness);
-            console.log("hapiness" + self.happiness);
-            console.log("obedientness" + self.obedientness);
+            console.log("tiredness " + this.tiredness);
+            console.log("hunger " + this.hunger);
+            console.log("loneliness " + this.loneliness);
+            console.log("happiness " + this.happiness);
+            console.log("obedientness " + this.obedientness);
         }
 };
